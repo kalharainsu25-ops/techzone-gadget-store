@@ -2,29 +2,186 @@
 <html>
 <head>
 <title>Techzone Gadget Store</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#020b14;
+    color:white;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:0.2px;
+}
+
+.logo h1{
+    margin:0;
+    text-align:left;
+    color:#1e90ff;
+
+}
+.logo p{
+    margin:0;
+    font-size:13px;
+    text-align:center
+}
+
+.search input{
+    width:900px;
+    padding:12px;
+    border-radius:8px;
+    background:#0b1622;
+    color:white;
+     margin:35px;
+}
+nav{
+    background:#06111d;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#1e90ff;
+}
+.main{
+    width:85%;
+    margin:25px auto;
+    padding:45px 70px;
+    border-radius:15px;
+    background:linear-gradient(to right,#03101f,#004b9b);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.main-text h2{
+    margin:0;
+    font-size:35px;
+    letter-spacing:2px;
+    color:white;
+}
+
+.main-text h1{
+    margin:5px 0;
+    font-size:45px;
+    color:#1e90ff;
+}
+
+.main-text p{
+    font-size:18px;
+    color:white;
+}
+
+.main-text a{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 28px;
+    background:#1e90ff;
+    color:white;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+.main-text a:hover{
+    background:#4aa8ff;
+}
+
+.main img{
+    width:520px;
+}
+
+h2{
+    text-align:center;
+    color:#1e90ff;
+    margin-top:40px;
+}
+
+h3{
+    color:#1e90ff;
+}
+
+img{
+    border-radius:10px;
+    margin:10px;
+}
+
+ul{
+    background:#0b1622;
+    border:1px solid #243447;
+    border-radius:10px;
+    padding:20px 40px;
+    width:70%;
+}
+
+p{
+    line-height:1.6;
+}
+
+del{
+    color:#999;
+}
+</style>
 </head>
 <body>
-<h1>Techzone Gadget Store</h1>
-<p><p>
-Enhance your setup with our premium computer accessories, featuring high-performance keyboards, gaming mice, surround-sound headsets, and cutting-edge peripherals designed for work, creativity, and gaming.
-</p></p><br>
+    <div class="logo">
+    <img src="images/Logo.png" width="50">
+
+    <div class="logo-text">
+    <h1>Techzone </h1>
+    <p>Gadget Store</p>
+    </div>
+
+    <div class="search">  
+        <input type="text" placeholder="Search for products...">
+    </div>
+
+    <div class="contact">
+        <a href="#contact" >
+        <img src="images/contact us.jpg" width="150">
+        </a>
+    </div>
+
+    <div class="gsm">
+        <a href="https://www.gsmarena.com/" target=_blank>
+            <img src="images/gsm.jpg" width="50">
+        </a>
+    </div>
+    </div>
+
 <nav>
-<a href="#smartphones">Smartphones</a><br>
-<a href="#laptops">Laptopss</a><br>
-<a href="#audio">Audio & Headphones</a><br>
-<a href="#Smartwatches">Smartwatches</a><br>
-<a href="#gaming">Gaming Accesories</a><br>
+<a href="#smartphones">Smartphones </a> 
+<a href="#laptops">Laptops</a>
+<a href="#audio">Audio & Headphones</a>
+<a href="#Smartwatches">Smartwatches</a>
+<a href="#gaming">Gaming Accesories</a>
+<a href="#special">Special offers</a>
 </nav>
+<div class="main">
+    <div class="main-text">
+   <h2> UPGRADE YOUR</h2>
+        <h1>TECH EXPERIENCE</h1>
+        <p>Latest Gadgets • Best Prices • Top Quality</p>
+        <a href="#smartphones">SHOP NOW ❯</a>
+    </div>
 
-<h2>Special offers & New Arrials</h2>
-<p>New Arrival: Asus TUF Gaming Laptop</p>
-<p>Special Offers : 10% discount for selected <a href="#headphones"> Headphones</a></p>
-
-
+    <img src="images/accessories.jpg" alt="Tech products">
+</div>
+   
 <h2 id="smartphones">Smartphones</h2>
 
 <h3>Samsung Galaxy s24</h3>
-<img src="images\Samsung galaxy s24.jpg" width="200">
+<img src="images/Samsung galaxy s24.jpg" width="200">
 <p>Compact premium flagship smartphone featuring a 6.2-inch Dynamic LTPO AMOLED 2X display, an Exynos 2400 or Snapdragon 8 Gen 3 processor,<br> and a versatile triple-camera system with a 50MP main sensor.</p>
 <ul>
 <li>Processor: Exynos 2400 / Snapdragon 8 Gen 3 for Galaxy</li>
@@ -313,7 +470,7 @@ Ultra-powerful gaming laptop featuring an Intel Core i7-13620H processor, 16GB D
 <li>Availability: In Stock</li>
 </ul>
 
-<h2 id="headphones">Special Discount Headphones</h2>
+<h2 id="special">Special Discount Headphones</h2>
 <h3>Sony WH-1000XM5 Wireless Headphones</h3>
 <img src="images/Sony WH-1000XM5 Wireless Headphones.jpg" alt="Sony WH-1000XM5" width="300">
 <p>Premium wireless headphones featuring industry-leading noise cancellation, high-resolution audio, advanced microphone technology, and an ultra-comfortable lightweight design for immersive music and crystal-clear calls.</p>
@@ -325,6 +482,9 @@ Ultra-powerful gaming laptop featuring an Intel Core i7-13620H processor, 16GB D
 <li>Price: <del>LKR 115,000</del>    LKR 103,500</li>
 <li>Availability: In Stock</li>
 </ul>
+
+
+<h2 id="contact">Contact Us</h2>
 
 
 
